@@ -28,6 +28,7 @@ flowchart TB
   A --> B["💼 WORK<br/><br/>Công việc y tế"]
   A --> C["👤 PERSONAL<br/><br/>Cá nhân"]
   A --> D["⚗️ SANDBOX<br/><br/>Kiểm thử"]
+  Ba Profile có vùng dữ liệu trình duyệt độc lập.
 
   classDef chrome fill:#E8F0FE,stroke:#E8F0FE,color:#202124,stroke-width:2px
   classDef work fill:#E3F2FD,stroke:#E3F2FD,color:#1565C0,stroke-width:2px
