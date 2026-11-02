@@ -29,10 +29,6 @@ flowchart TB
   A --> C["👤 PERSONAL<br/><br/>Cá nhân"]
   A --> D["⚗️ SANDBOX<br/><br/>Kiểm thử"]
 
-  B ~~~ E
-  C ~~~ E
-  D ~~~ E
-
   E["Ba Profile có vùng dữ liệu trình duyệt độc lập."]
 
   classDef chrome fill:#E8F0FE,stroke:#E8F0FE,color:#202124,stroke-width:2px
