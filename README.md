@@ -25,9 +25,9 @@ Sử dụng nhiều Chrome Profile độc lập. Mỗi Profile có User Data Dir
 flowchart TB
   A["🌐 GOOGLE CHROME<br/>Hệ thống quản lý đa hồ sơ trình duyệt"]
 
-  A --> B["💼 WORK<br/><br/>🔵 Xanh dương<br/><br/>Công việc y tế"]
-  A --> C["👤 PERSONAL<br/><br/>🟢 Xanh lá<br/><br/>Cá nhân"]
-  A --> D["⚗️ SANDBOX<br/><br/>🟠 Cam<br/><br/>Kiểm thử"]
+  A --> B["💼 WORK<br/><br/>Xanh dương<br/><br/>Công việc y tế"]
+  A --> C["👤 PERSONAL<br/><br/>Xanh lá<br/><br/>Cá nhân"]
+  A --> D["⚗️ SANDBOX<br/><br/>Cam<br/><br/>Kiểm thử"]
 
   classDef chrome fill:#E8F0FE,stroke:#E8F0FE,color:#202124,stroke-width:2px
   classDef work fill:#E3F2FD,stroke:#E3F2FD,color:#1565C0,stroke-width:2px
