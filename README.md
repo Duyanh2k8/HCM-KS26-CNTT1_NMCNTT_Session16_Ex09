@@ -70,35 +70,80 @@ BOOKMARK
     │   ├── Tiếp đón và hàng chờ
     │   ├── Hồ sơ bệnh án
     │   ├── Kê đơn điện tử
-    |   ├──
-    |   ├──
-    |   ├──
-    |   ├──
-    |   ├──
-    |   ├──
-    │   └── Forms
+    |   ├── Chỉ định CLS và kết quả xét nghiệm
+    |   ├── Lịch hẹn và tái khám
+    |   ├── Viện phí và thanh toán
+    |   ├── Báo cáo ca trực
+    |   ├── Hỗ trợ IT, báo lỗi
+    |   ├── Cổng giám định BHYT
+    │   └── Cổng BHXH Việt Nam
     │
     ├── 📁 02_Pharma_Portal
-    |   ├──
-    |   ├──
-    |   ├──
-    |   ├──
-    |   ├──
-    │   ├── Duoc_thu_Quoc_gia
-    │   ├── Drug_Database
-    │   ├── Drug_Interactions
-    │   ├── Ministry_of_Health
-    │   └── Drug_Information
+    |   ├── Dược thư Quốc gia Việt Nam
+    |   ├── Cục Quản lý Dược
+    |   ├── Dịch vụ công – tra cứu số đăng ký thuốc
+    |   ├── Cảnh giác Dược (DI và ADR)
+    |   ├── Cổng thông tin Bộ Y tế – văn bản dược
+    │   ├── Drugs.com – kiểm tra tương tác thuốc
+    │   ├── Medscape – Drug Reference
+    │   ├── DrugBank
+    │   ├── WHO – Essential Medicines
+    │   └── Kho thuốc nội bộ (CarePulse Pharmacy)
     │
     └── 📁 03_Medical_Tools
-        ├──
-        ├──
-        ├──
-        ├──
-        ├──
-        ├── Google_Translate
-        ├── Google_Scholar
+        ├── Google Dịch
         ├── PubMed
-        ├── Medical_Calculator
-        └── ICD_10_Lookup
+        ├── MDCalc – công cụ tính điểm lâm sàng
+        ├── WHO ICD-10 / ICD-11
+        ├── Cục Quản lý Khám, chữa bệnh
+        ├── UpToDate (nếu đơn vị có bản quyền)
+        ├── Cochrane Library
+        ├── CDC – lịch tiêm chủng
+        ├── Phòng họp hội chẩn (Google Meet)
+        └── Hướng dẫn chẩn đoán và điều trị
 ```
+### 2.	Áp dụng kỹ thuật Favicon-Only
+**Khái niệm:** Favicon-Only là cách hiển thị Bookmark chỉ bằng biểu tượng website (Favicon), loại bỏ phần tên chữ để tiết kiệm diện tích thanh dấu trang.
+**Hướng dẫn thực hiện:**
+1.	Mở Google Chrome.
+2.	Truy cập website CarePulse.
+3.	Nhấn Ctrl + D để thêm website vào Bookmark.
+4.	Chọn lưu vào Bookmark Bar.
+5.	Nhấp chuột phải vào Bookmark vừa tạo.
+6.	Chọn Edit.
+7.	Xóa toàn bộ nội dung trong ô Name.
+8.	Giữ nguyên URL và nhấn Save.
+9.	Lặp lại với 3 website còn lại.
+
+**Kết quả:** Thanh Bookmark hiển thị 4 biểu tượng thay vì 4 dòng tên website dài, giúp tiết kiệm không gian và truy cập nhanh hơn.
+### 3.	Xử lý tình huống an ninh: Khách mượn máy tính trong 30 phút
+Lựa chọn phù hợp nhất là: Guest Profile
+### a.	Vì sao chọn Guest Profile thay vì Incognito?
+|Tiêu chí |	Guest Profile |	Incognito|
+|---|---|---|
+|Mục đích |	Cho người khác sử dụng máy tạm thời	| Duyệt web riêng tư trong Profile hiện tại|
+|Dữ liệu cá nhân |	Không sử dụng dữ liệu Profile chủ |	Vẫn chạy trong Profile hiện tại|
+|Cookies |	Phiên khách tách biệt |	Tách khỏi phiên thông thường nhưng dùng môi trường Profile hiện tại|
+|Sau khi đóng	| Dữ liệu phiên khách bị xóa |	Dữ liệu phiên ẩn danh bị xóa|
+|Phù hợp máy dùng chung |	Rất phù hợp |	Chỉ phù hợp khi người dùng tự kiểm soát phiên|
+### b.	Quy trình thực hiện
+1.	Bác sĩ lưu và hoàn tất công việc trên CarePulse.
+2.	Đóng các hồ sơ bệnh nhân và đăng xuất khỏi hệ thống theo quy trình của phòng khám.
+3.	Nhấn biểu tượng Profile ở góc trên bên phải Chrome.
+4.	Chọn Guest (Khách).
+5.	Bàn giao máy tính cho khách hoặc đoàn thanh tra.
+6.	Sau 30 phút, khách đóng toàn bộ cửa sổ Guest.
+7.	Nhân viên kiểm tra lại Profile Work và đăng nhập lại theo quy định.
+### c.	Cảnh báo nguy cơ Cloud Sync
+Không nên bật Cloud Sync bằng tài khoản Google cá nhân trên máy tính dùng chung của trạm y tế vì:
+-	Có nguy cơ đồng bộ Bookmark và lịch sử duyệt web cá nhân lên máy tính công cộng.
+-	Có thể lưu mật khẩu cá nhân trên thiết bị dùng chung.
+-	Người sử dụng sau có thể tiếp cận thông tin cá nhân nếu không đăng xuất và bảo vệ tài khoản đúng cách.
+-	Dữ liệu đồng bộ có thể bị truy cập nếu tài khoản Google bị chiếm quyền.
+
+**Giải pháp đề xuất:**
+-	Không đồng bộ dữ liệu cá nhân trên máy trạm y tế.
+-	Chỉ sử dụng tài khoản công việc được đơn vị quản lý và phê duyệt.
+-	Bật xác thực hai yếu tố (2FA).
+-	Khóa màn hình khi rời khỏi máy tính.
+-	Không lưu mật khẩu bệnh nhân hoặc thông tin xác thực trên trình duyệt dùng chung.
