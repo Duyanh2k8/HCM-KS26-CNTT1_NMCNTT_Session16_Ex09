@@ -29,6 +29,10 @@ flowchart TB
   A --> C["👤 PERSONAL<br/><br/>Cá nhân"]
   A --> D["⚗️ SANDBOX<br/><br/>Kiểm thử"]
 
+  B ~~~ E
+  C ~~~ E
+  D ~~~ E
+
   E["Ba Profile có vùng dữ liệu trình duyệt độc lập."]
 
   classDef chrome fill:#E8F0FE,stroke:#E8F0FE,color:#202124,stroke-width:2px
@@ -44,4 +48,57 @@ flowchart TB
   class E note
 
   linkStyle default stroke:#9AA0A6,stroke-width:2px
+```
+**Bảng phân tích chi tiết**
+|Tiêu chí |	Work |	Personal |	Sandbox|
+|---|---|---|---|
+|Mục đích	| Khám chữa bệnh |	Nhu cầu cá nhân |	Kiểm thử ứng dụng|
+|Cookies	| Tài khoản công việc |	Tài khoản cá nhân	| Tài khoản thử nghiệm|
+|History	| Lịch sử công việc| 	Lịch sử cá nhân	| Lịch sử kiểm thử|
+|Bookmarks |	CarePulse, BHYT, Dược thư |	Website cá nhân	| Website thử nghiệm|
+|Extensions	| Công cụ được phê duyệt	| Tiện ích cá nhân |	Tiện ích phục vụ test|
+## Phần 2: Thiết kế hệ thống Bookmark & Quy trình an toàn
+### 1.	Xây dựng cây thư mục Bookmark chuẩn
+Sử dụng tổ hợp phím Ctrl + Shift + O để mở Trình quản lý dấu trang
+
+**Thiết kế cây thư mục gồm 3 thư mục chính:**
+```text
+BOOKMARK
+    │
+    ├── 📁 01_CarePulse_Clinic
+    │   ├── CarePulse – Đăng nhập
+    │   ├── Tiếp đón và hàng chờ
+    │   ├── Hồ sơ bệnh án
+    │   ├── Kê đơn điện tử
+    |   ├──
+    |   ├──
+    |   ├──
+    |   ├──
+    |   ├──
+    |   ├──
+    │   └── Forms
+    │
+    ├── 📁 02_Pharma_Portal
+    |   ├──
+    |   ├──
+    |   ├──
+    |   ├──
+    |   ├──
+    │   ├── Duoc_thu_Quoc_gia
+    │   ├── Drug_Database
+    │   ├── Drug_Interactions
+    │   ├── Ministry_of_Health
+    │   └── Drug_Information
+    │
+    └── 📁 03_Medical_Tools
+        ├──
+        ├──
+        ├──
+        ├──
+        ├──
+        ├── Google_Translate
+        ├── Google_Scholar
+        ├── PubMed
+        ├── Medical_Calculator
+        └── ICD_10_Lookup
 ```
